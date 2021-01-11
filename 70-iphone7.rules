@@ -1,0 +1,2 @@
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="12:a5:cf:42:92:fd", NAME="iphone7", RUN+="bash /home/daniel/iphone7-linux/ethbridge.sh on"
+SUBSYSTEM=="net", ACTION=="remove", NAME="iphone7", RUN+="bash /home/daniel/iphone7-linux/ethbridge.sh off"
