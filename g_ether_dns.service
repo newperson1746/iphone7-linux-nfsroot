@@ -1,10 +1,10 @@
 [Unit]
 Description=Fix DNS not set by kernel ip=dhcp autoconfig
-After=network.target
+After=network-online.target
 
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/resolvectl dns usb0 8.8.8.8 8.8.4.4
 
 [Install]
-WantedBy=network-online.target
+WantedBy=multi-user.target
