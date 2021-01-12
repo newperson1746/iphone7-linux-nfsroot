@@ -1,0 +1,14 @@
+[Unit]
+Description=Apple H9 touch daemon
+
+[Service]
+Type=exec
+ExecStart=/home/daniel-remote/hx-touchd C1F5D,2 /lib/firmware/multitouch/D10.mtprops /dev/nvme0n3
+
+[Install]
+WantedBy=multi-user.target
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
