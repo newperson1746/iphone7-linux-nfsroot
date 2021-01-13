@@ -1,6 +1,9 @@
 # iphone7-linux-nfsroot
 Helper files to set up an iPhone 7 on the Sandcastle linux port to boot mainline distros by nfs
 
+## firmware/D10.mtprops 
+Properties file for hx-touchd. Install in a convenient location like /lib/firmware, and make sure to change it to match in the hx-touchd service file down below.
+
 ## 70-iphone7.rules
 If you replaced the MAC of g_ether, replace it here as well. Also put the path to `ethbridge.sh` on your computer.
 
