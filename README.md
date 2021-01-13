@@ -1,5 +1,6 @@
 # iphone7-linux-nfsroot
 Helper files to set up an iPhone 7 on the Sandcastle linux port to boot mainline distros by nfs
+https://www.reddit.com/r/linux/comments/kvmsfd/success_iphone_7_booting_ubuntu_2004_to_full/
 
 ## firmware/D10.mtprops 
 Properties file for hx-touchd. Install in a convenient location like /lib/firmware, and make sure to change it to match in the hx-touchd service file down below.
